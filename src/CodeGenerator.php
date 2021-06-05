@@ -114,12 +114,7 @@ final class CodeGenerator
 
     private static function generateReturnType(ReflectionMethod $method) : string
     {
-        $ret_type = $method->getReturnType();
-        if ($ret_type === null){
-            return '';
-        }
-        $ret_type_str = ($ret_type instanceof ReflectionNamedType) ? $ret_type->getName() : "$ret_type";
-        echo "ret_type_str: " .  $ret_type_str . PHP_EOL;
+        $ret_type_str = self::getMethodReturnTypeString($method);
 
         /*
         foreach(get_declared_classes() as $clazz){
@@ -138,6 +133,15 @@ final class CodeGenerator
         return '';
     }
 
+    private static function getMethodReturnTypeString(ReflectionMethod $method) : string
+    {
+        $ret_type = $method->getReturnType();
+        if ($ret_type === null){
+            return '';
+        }
+        return ($ret_type instanceof ReflectionNamedType) ? $ret_type->getName() : "$ret_type";
+    }
+
     /**
      * @param array $lines
      * @param ReflectionMethod $method
@@ -150,7 +154,8 @@ final class CodeGenerator
             $lines[] = '        // Abstract Method';
         }
         else{
-            if ($method->hasReturnType() && 'void' != $method->getReturnType()){
+            $ret_type_str = self::getMethodReturnTypeString($method);
+            if ($method->hasReturnType() && 'void' !== $ret_type_str){
                 $lines[] = '        return parent::' . $method->getName() . '(' . $calling_params . ');';
             }
             else{
