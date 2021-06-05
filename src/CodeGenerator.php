@@ -118,6 +118,7 @@ final class CodeGenerator
         if ($ret_type === null){
             return '';
         }
+        echo "ret_type" .  get_class($ret_type) . PHP_EOL;
         $ret_type_str = ($ret_type instanceof ReflectionNamedType) ? $ret_type->getName() : "$ret_type";
 
         /*
