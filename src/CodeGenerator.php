@@ -198,7 +198,7 @@ final class CodeGenerator
     {
         $ret = [];
         if ($param->hasType()){
-            $ret[] = $param->getType();
+            $ret[] = self::getTypeString($param->getType());
         }
         $ret[] = '$' . $param->getName();
         if ($param->allowsNull()){
