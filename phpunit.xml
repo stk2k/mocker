@@ -15,7 +15,7 @@
          stopOnIncomplete="false"
          stopOnSkipped="false"
          stopOnRisky="false"
-         bootstrap="test/cache/autoload.php"
+         bootstrap="vendor/autoload.php"
 >
     <testsuites>
         <testsuite name="stk2k/mocker tests">
