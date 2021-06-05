@@ -5,7 +5,7 @@ namespace stk2k\mocker;
 
 use ReflectionClass;
 use ReflectionException;
-use stk2k\mocker\Exception\MockerException;
+use stk2k\mocker\exception\MockerException;
 
 final class ClassNameParser
 {

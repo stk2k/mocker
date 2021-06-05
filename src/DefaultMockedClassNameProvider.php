@@ -5,7 +5,7 @@ namespace stk2k\mocker;
 
 use Exception;
 
-use stk2k\mocker\Exception\MockerException;
+use stk2k\mocker\exception\MockerException;
 
 final class DefaultMockedClassNameProvider implements MockedClassNameProviderInterface
 {

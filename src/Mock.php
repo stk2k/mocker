@@ -5,7 +5,7 @@ namespace stk2k\mocker;
 
 use Stk2k\FileSystem\Exception\MakeDirectoryException;
 use Stk2k\FileSystem\FileSystem;
-use stk2k\mocker\Exception\MockerException;
+use stk2k\mocker\exception\MockerException;
 
 final class Mock
 {

@@ -13,8 +13,8 @@ use ReflectionType;
 
 use stk2k\FileSystem\File;
 use stk2k\filesystem\FileSystem;
-use stk2k\mocker\Exception\FinalClassCanNotBeExtendedException;
-use stk2k\mocker\Exception\MockerException;
+use stk2k\mocker\exception\FinalClassCanNotBeExtendedException;
+use stk2k\mocker\exception\MockerException;
 
 final class CodeGenerator
 {
