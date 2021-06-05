@@ -24,12 +24,12 @@
       "Foo\\Bar\\": "include/"
     },
     "psr-4": {
-      "stk2k\\Mocker\\": "src/"
+      "stk2k\\mocker\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "stk2k\\Mocker\\Test\\": "test/"
+      "stk2k\\mocker\\test\\": "test/"
     }
   }
 }

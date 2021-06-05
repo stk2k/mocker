@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker;
+namespace stk2k\mocker;
 
 interface MockedClassNameProviderInterface
 {

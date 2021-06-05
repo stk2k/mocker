@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker\Test;
+namespace stk2k\mocker\test;
 
 use Exception;
 
@@ -9,8 +9,8 @@ use Foo\Bar\Qux;
 use PHPUnit\Framework\TestCase;
 
 use Foo\Bar\AbstractBazz;
-use stk2k\Mocker\CodeGenerator;
-use stk2k\Mocker\DefaultMockedClassNameProvider;
+use stk2k\mocker\CodeGenerator;
+use stk2k\mocker\DefaultMockedClassNameProvider;
 
 final class CodeGeneratorTest extends TestCase
 {

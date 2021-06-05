@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker\Test;
+namespace stk2k\mocker\test;
 
 use PHPUnit\Framework\TestCase;
-use stk2k\Mocker\ClassNameParser;
-use stk2k\Mocker\Exception\MockerException;
+use stk2k\mocker\ClassNameParser;
+use stk2k\mocker\Exception\MockerException;
 
 final class ClassNameParserTest extends TestCase
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker;
+namespace stk2k\mocker;
 
 use Exception;
 use ReflectionClass;
@@ -11,10 +11,10 @@ use ReflectionException;
 use ReflectionNamedType;
 use ReflectionType;
 
-use Stk2k\FileSystem\File;
-use Stk2k\FileSystem\FileSystem;
-use stk2k\Mocker\Exception\FinalClassCanNotBeExtendedException;
-use stk2k\Mocker\Exception\MockerException;
+use stk2k\FileSystem\File;
+use stk2k\filesystem\FileSystem;
+use stk2k\mocker\Exception\FinalClassCanNotBeExtendedException;
+use stk2k\mocker\Exception\MockerException;
 
 final class CodeGenerator
 {

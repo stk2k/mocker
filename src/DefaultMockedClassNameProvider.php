@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker;
+namespace stk2k\mocker;
 
 use Exception;
 
-use stk2k\Mocker\Exception\MockerException;
+use stk2k\mocker\Exception\MockerException;
 
 final class DefaultMockedClassNameProvider implements MockedClassNameProviderInterface
 {

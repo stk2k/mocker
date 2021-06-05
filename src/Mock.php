@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker;
+namespace stk2k\mocker;
 
 use Stk2k\FileSystem\Exception\MakeDirectoryException;
 use Stk2k\FileSystem\FileSystem;
-use stk2k\Mocker\Exception\MockerException;
+use stk2k\mocker\Exception\MockerException;
 
 final class Mock
 {

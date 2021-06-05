@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker\Test;
+namespace stk2k\mocker\test;
 
 use PHPUnit\Framework\TestCase;
 use Stk2k\FileSystem\FileSystem;
-use stk2k\Mocker\DefaultMockedClassNameProvider;
-use stk2k\Mocker\Exception\MockerException;
-use stk2k\Mocker\Mock;
+use stk2k\mocker\DefaultMockedClassNameProvider;
+use stk2k\mocker\Exception\MockerException;
+use stk2k\mocker\Mock;
 
 final class MockTest extends TestCase
 {

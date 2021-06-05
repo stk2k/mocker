@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker\Exception;
+namespace stk2k\mocker\exception;
 
 use Throwable;
 use Exception;

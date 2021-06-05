@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker\Test;
+namespace stk2k\mocker\test;
 
 use Foo\Bar\AbstractBazz;
 use PHPUnit\Framework\TestCase;
-use stk2k\Mocker\DefaultMockedClassNameProvider;
-use stk2k\Mocker\Exception\MockerException;
+use stk2k\mocker\DefaultMockedClassNameProvider;
+use stk2k\mocker\Exception\MockerException;
 
 final class DefaultClassNameProviderTest extends TestCase
 {

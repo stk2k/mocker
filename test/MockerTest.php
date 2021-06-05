@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace stk2k\Mocker\Test;
+namespace stk2k\mocker\test;
 
 use PHPUnit\Framework\TestCase;
-use stk2k\Mocker\Exception\MockerException;
-use stk2k\Mocker\Mock;
-use stk2k\Mocker\Mocker;
+use stk2k\mocker\Exception\MockerException;
+use stk2k\mocker\Mock;
+use stk2k\mocker\Mocker;
 
 final class MockerTest extends TestCase
 {
@@ -19,7 +19,7 @@ final class MockerTest extends TestCase
                 $this->fail('Returned Not Mock instance');
             }
 
-            $this->assertEquals('stk2k\Mocker\Test\MockedFoo', $mock->getClassName());
+            $this->assertEquals('stk2k\mocker\test\MockedFoo', $mock->getClassName());
         }
         catch(MockerException $ex)
         {
