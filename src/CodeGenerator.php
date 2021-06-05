@@ -9,6 +9,7 @@ use ReflectionMethod;
 use ReflectionParameter;
 use ReflectionException;
 use ReflectionNamedType;
+use ReflectionType;
 
 use Stk2k\FileSystem\File;
 use Stk2k\FileSystem\FileSystem;
@@ -135,11 +136,7 @@ final class CodeGenerator
 
     private static function getMethodReturnTypeString(ReflectionMethod $method) : string
     {
-        $ret_type = $method->getReturnType();
-        if ($ret_type === null){
-            return '';
-        }
-        return ($ret_type instanceof ReflectionNamedType) ? $ret_type->getName() : "$ret_type";
+        return self::getTypeString($method->getReturnType());
     }
 
     /**
@@ -176,6 +173,19 @@ final class CodeGenerator
             $ret[] = '$' . $param->getName();
         }
         return implode(', ', $ret);
+    }
+
+    /**
+     * @param ReflectionType|null $type
+     *
+     * @return string
+     */
+    private static function getTypeString(?ReflectionType $type) : string
+    {
+        if ($type === null){
+            return '';
+        }
+        return ($type instanceof ReflectionNamedType) ? $type->getName() : "$type";
     }
 
     /**
