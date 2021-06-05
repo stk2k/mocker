@@ -8,6 +8,7 @@ use ReflectionClass;
 use ReflectionMethod;
 use ReflectionParameter;
 use ReflectionException;
+use ReflectionNamedType;
 
 use Stk2k\FileSystem\File;
 use Stk2k\FileSystem\FileSystem;
@@ -117,7 +118,7 @@ final class CodeGenerator
         if ($ret_type === null){
             return '';
         }
-        $ret_type_str = "$ret_type";
+        $ret_type_str = ($ret_type instanceof ReflectionNamedType) ? $ret_type->getName() : "$ret_type";
 
         /*
         foreach(get_declared_classes() as $clazz){
