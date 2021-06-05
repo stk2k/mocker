@@ -22,6 +22,7 @@ final class CodeGeneratorTest extends TestCase
             CodeGenerator::generateClassCode(AbstractBazz::class, $save_dir, new DefaultMockedClassNameProvider());
         }
         catch(Exception $ex){
+            echo $ex->getTraceAsString();
             $this->fail($ex->getMessage());
         }
 
