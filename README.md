@@ -1,16 +1,16 @@
-Module system for kNot Framework
+Simple mock/stub library
 =======================
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/knot-lib/module.svg?style=flat-square)](https://packagist.org/packages/knot-lib/module)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/stk2k/mocker.svg?style=flat-square)](https://packagist.org/packages/stk2k/mocker)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://travis-ci.org/knot-lib/module.svg?branch=master)](https://travis-ci.org/knot-lib/module)
-[![Coverage Status](https://coveralls.io/repos/github/knot-lib/module/badge.svg?branch=master)](https://coveralls.io/github/knot-lib/module?branch=master)
-[![Code Climate](https://codeclimate.com/github/knot-lib/module/badges/gpa.svg)](https://codeclimate.com/github/knot-lib/module)
-[![Total Downloads](https://img.shields.io/packagist/dt/knot-lib/module.svg?style=flat-square)](https://packagist.org/packages/knot-lib/module)
+[![Build Status](https://travis-ci.org/stk2k/mocker.svg?branch=master)](https://travis-ci.org/stk2k/mocker)
+[![Coverage Status](https://coveralls.io/repos/github/stk2k/mocker/badge.svg?branch=master)](https://coveralls.io/github/stk2k/mocker?branch=master)
+[![Code Climate](https://codeclimate.com/github/stk2k/mocker/badges/gpa.svg)](https://codeclimate.com/github/stk2k/mocker)
+[![Total Downloads](https://img.shields.io/packagist/dt/stk2k/mocker.svg?style=flat-square)](https://packagist.org/packages/stk2k/mocker)
 
 ## Description
 
-knot-lib/module is a module system for kNot Framework.
+Simple mock/stub library
 
 
 ## Feature
@@ -22,15 +22,15 @@ knot-lib/module is a module system for kNot Framework.
 
 ## Requirement
 
-PHP 7.1 or later
+PHP 7.2 or later
 
-## Installing knot-lib/module
+## Installing stk2k/mocker
 
-The recommended way to install knot-lib/module is through
+The recommended way to install stk2k/mocker is through
 [Composer](http://getcomposer.org).
 
 ```bash
-composer require knot-lib/module
+composer require stk2k/mocker
 ```
 
 After installing, you need to require Composer's autoloader:
@@ -40,7 +40,7 @@ require 'vendor/autoload.php';
 ```
 
 ## License
-[MIT](https://github.com/knot-lib/module/blob/master/LICENSE)
+[MIT](https://github.com/stk2k/mocker/blob/master/LICENSE)
 
 ## Author
 
